@@ -19,12 +19,24 @@ export default createGlobalStyle`
 
   body 
   {
-    background-color: blue;
+   
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
     font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul{
+    list-style: none;
+  }
+  
+  button{
+    cursor: pointer;
   }
 
 `;
