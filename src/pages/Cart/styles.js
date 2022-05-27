@@ -24,7 +24,7 @@ export const TravelItem = styled.li`
   justify-content: space-between;
   border-bottom: 1px solid #666;
   padding: 10px 0px;
-
+  align-items: center;
   img {
     heigth: 100px;
   }
