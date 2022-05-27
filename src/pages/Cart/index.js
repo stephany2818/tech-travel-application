@@ -33,7 +33,7 @@ function Cart() {
             <p>Titulo</p>
             <strong>Precio</strong>
           </Info>
-          <Quantity />
+          <Quantity readOnly type="number" value={1} />
           <SubTotal>
             <p>240.00</p>
             <button type="button">
@@ -47,7 +47,7 @@ function Cart() {
             <p>Titulo</p>
             <strong>Precio</strong>
           </Info>
-          <Quantity />
+          <Quantity readOnly type="number" value={1} />
           <SubTotal>
             <p>240.00</p>
             <button type="button">
