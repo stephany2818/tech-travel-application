@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerList = styled.ul`
-  widt: 100%;
+  width: 100%;
   background-color: #fff;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +24,7 @@ export const TravelItem = styled.li`
   padding: 10px 0;
   border-bottom: 1px solid #666;
   justify-content: space-between;
+  align-items: center;
 
   img {
     height: 100px;
@@ -59,14 +60,12 @@ export const Quantity = styled.input`
 `;
 
 export const SubTotal = styled.div`
-  font-size: 16px;
-  font-weight: 600;
   display: flex;
+  font-weight: 600;
+  font-size: 16px;
   align-items: right;
 
   p {
-    font-size: 14px;
-    font-weight: 600;
     margin-right: 10px;
   }
 `;
