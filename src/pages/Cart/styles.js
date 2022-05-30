@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerList = styled.ul`
-  width= 100%;
+  widt: 100%;
   background-color: #fff;
   flex-direction: column;
   justify-content: center;
@@ -14,19 +14,19 @@ export const ContainerList = styled.ul`
   padding: 36px 44px;
   align-items: center;
   margin-top: 45px;
-  max-width= 958px;
+  max-width: 958px;
 `;
 
 export const TravelItem = styled.li`
-  width= 100%;
+  width: 100%;
   display: flex;
   margin-bottom: 10px;
-  justify-content: space-between;
+  padding: 10px 0;
   border-bottom: 1px solid #666;
-  padding: 10px 0px;
-  align-items: center;
+  justify-content: space-between;
+
   img {
-    heigth: 100px;
+    height: 100px;
   }
 `;
 
@@ -58,4 +58,15 @@ export const Quantity = styled.input`
   text-aling: center;
 `;
 
-export const SubTotal = styled.div``;
+export const SubTotal = styled.div`
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: right;
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+`;
