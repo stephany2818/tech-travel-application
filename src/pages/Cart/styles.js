@@ -34,8 +34,8 @@ export const TravelItem = styled.li`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
+  align-items: right;
+  justify-content: right;
 
   p {
     font-size: 14px;
@@ -66,8 +66,9 @@ export const SubTotal = styled.div`
   font-size: 16px;
   align-items: center;
 
-  p {
+  strong {
     margin-right: 10px;
+    font-size: 16px;
   }
 
   button {
@@ -89,11 +90,11 @@ export const TextTotalPlay = styled.li`
     font-size: 16px;
     color: #999999;
   }
-`;
 
-export const vTotalToPlay = styled.div`
-  width: 100%;
-  display: flex;
+  strong {
+    margin-top: 10px;
+    font-size: 18px;
+  }
 `;
 
 export const ToHeader = styled.li`
@@ -101,7 +102,7 @@ export const ToHeader = styled.li`
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
-  align-items: right;
+  align-items: center;
 
   h1 {
     font-size: 14px;
