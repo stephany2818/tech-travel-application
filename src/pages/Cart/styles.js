@@ -9,7 +9,6 @@ export const ContainerList = styled.ul`
   width: 100%;
   background-color: #fff;
   flex-direction: column;
-  justify-content: center;
   border-radius: 5px;
   padding: 36px 44px;
   align-items: center;
@@ -49,15 +48,18 @@ export const Info = styled.div`
 `;
 
 export const Quantity = styled.input`
+  font-weight: 600;
   font-size: 16px;
-  color: #666;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #999999;
   padding: 6px;
   border-radius: 5px;
+  box-sizing: border-box;
   width: 40px;
   height: 40px;
   border-bottom: 1px solid #0676d9;
-  aligncontent: center;
-  align-items: center;
+  text-align: center;
 `;
 
 export const SubTotal = styled.div`
@@ -67,7 +69,6 @@ export const SubTotal = styled.div`
   align-items: center;
 
   strong {
-    margin-right: 10px;
     font-size: 16px;
   }
 
@@ -82,7 +83,7 @@ export const SubTotal = styled.div`
 export const TextTotalPlay = styled.li`
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: baseline;
 
   p {
     margin-right: 10px;
@@ -92,8 +93,8 @@ export const TextTotalPlay = styled.li`
   }
 
   strong {
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
   }
 `;
 
