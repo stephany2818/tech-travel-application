@@ -14,7 +14,7 @@ import {
 } from './styles';
 
 function Cart() {
-  const { state, setState } = useContext(CartContext);
+  const { state } = useContext(CartContext);
   const totalToPlay = state.cart.reduce(
     (acc, travel) => acc + travel.quantity * travel.price,
     0,
@@ -48,7 +48,7 @@ function Cart() {
             </Info>
             <Quantity readOnly type="number" value={travel.quantity} />
             <SubTotal>
-              <strong>$ {travel.quantity * travel.price}</strong>
+              <strong>$ {travel.quantity * travel.price}.00</strong>
               <button type="button" onClick={() => deleteCart(travel)}>
                 <FiTrash2 size={24} color="#0676d9" border="none" />
               </button>
@@ -57,7 +57,7 @@ function Cart() {
         ))}
         <TextTotalPlay>
           <p>TOTAL: </p>
-          <strong>$ {totalToPlay}</strong>
+          <strong>$ {totalToPlay}.00</strong>
         </TextTotalPlay>
       </ContainerList>
     </Container>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { MdAddShoppingCart } from 'react-icons/md';
+import { MdShoppingCart } from 'react-icons/md';
 import CartContext from '../../context/cart';
 import { Container, List, Unit } from './styles';
 import api from '../../services/api';
@@ -40,7 +40,7 @@ function Home() {
             <strong>{city.price}</strong>
             <button type="button" onClick={() => handlerAddToCart(city)}>
               <div>
-                <MdAddShoppingCart size={16} color="#fff" />
+                <MdShoppingCart size={26} color="#fff" />
               </div>
               <span>Agregar al Carrito</span>
             </button>

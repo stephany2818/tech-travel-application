@@ -6,7 +6,7 @@ import { Container, HeaderContainer, Cart } from './styles';
 import CartContext from '../../context/cart';
 
 function Header() {
-  const { state, setState } = useContext(CartContext);
+  const { state } = useContext(CartContext);
   const totalQuantity = state.cart.reduce(
     (acc, travel) => acc + travel.quantity,
     0,
