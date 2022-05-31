@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdDelete } from 'react-icons/md';
+import CartContext from '../../context/cart';
 import {
   Container,
   ContainerList,
@@ -10,51 +11,26 @@ import {
 } from './styles';
 
 function Cart() {
+  const { state, setState } = useContext(CartContext);
   return (
     <Container>
       <ContainerList>
-        <TravelItem>
-          <img src="" alt="titulo del Viaje" />
-          <Info>
-            <p>Titulo</p>
-            <strong>Precio</strong>
-          </Info>
-          <Quantity readOnly type="number" value={1} />
-          <SubTotal>
-            <p>240.00</p>
-            <button type="button">
-              <MdDelete size={24} color="#0676d9" />
-            </button>
-          </SubTotal>
-        </TravelItem>
-        <TravelItem>
-          <img src="" alt="titulo del Viaje" />
-          <Info>
-            <p>Titulo</p>
-            <strong>Precio</strong>
-          </Info>
-          <Quantity readOnly type="number" value={1} />
-          <SubTotal>
-            <p>240.00</p>
-            <button type="button">
-              <MdDelete size={24} color="#0676d9" />
-            </button>
-          </SubTotal>
-        </TravelItem>
-        <TravelItem>
-          <img src="" alt="titulo del Viaje" />
-          <Info>
-            <p>Titulo</p>
-            <strong>Precio</strong>
-          </Info>
-          <Quantity readOnly type="number" value={1} />
-          <SubTotal>
-            <p>240.00</p>
-            <button type="button">
-              <MdDelete size={24} color="#0676d9" />
-            </button>
-          </SubTotal>
-        </TravelItem>
+        {state.cart.map((travel) => (
+          <TravelItem>
+            <img src={travel.photo} alt={travel.title} />
+            <Info>
+              <p>{travel.title}</p>
+              <strong>{travel.price}</strong>
+            </Info>
+            <Quantity readOnly type="number" value={1} />
+            <SubTotal>
+              <p>240.00</p>
+              <button type="button">
+                <MdDelete size={24} color="#0676d9" />
+              </button>
+            </SubTotal>
+          </TravelItem>
+        ))}
       </ContainerList>
     </Container>
   );
