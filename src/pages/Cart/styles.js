@@ -34,8 +34,8 @@ export const TravelItem = styled.li`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 
   p {
     font-size: 14px;
@@ -56,16 +56,56 @@ export const Quantity = styled.input`
   width: 40px;
   height: 40px;
   border-bottom: 1px solid #0676d9;
-  text-aling: center;
+  aligncontent: center;
+  align-items: center;
 `;
 
 export const SubTotal = styled.div`
   display: flex;
   font-weight: 600;
   font-size: 16px;
-  align-items: right;
+  align-items: center;
 
   p {
     margin-right: 10px;
+  }
+
+  button {
+    margin-bottom: 0px;
+    border: 0px;
+    background-color: white;
+    padding: 10px 10px;
+  }
+`;
+
+export const TextTotalPlay = styled.li`
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  p {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #999999;
+  }
+`;
+
+export const vTotalToPlay = styled.div`
+  width: 100%;
+  display: flex;
+`;
+
+export const ToHeader = styled.li`
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: right;
+
+  h1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #999999;
   }
 `;

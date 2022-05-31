@@ -19,7 +19,12 @@ function Home() {
 
   function handlerAddToCart(travel) {
     const copyCity = [...state.cart];
-    copyCity.push(travel);
+    const travelIndex = copyCity.findIndex((city) => city.id === travel.id);
+    if (travelIndex >= 0) {
+      copyCity[travelIndex].quantity += 1;
+    } else {
+      copyCity.push({ ...travel, quantity: 1 });
+    }
     setState({
       cart: copyCity,
     });
